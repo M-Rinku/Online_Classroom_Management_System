@@ -1,0 +1,72 @@
+client side local data save,(session,cookies,txt)
+student attendance save procedure din sql dbms
+unique id .....student roll??email..(benifit common attribute)
+question paper set....google form???or default website...like ims.kgec
+attendaance upload xlsx file
+gridview coloum...row...visible button false??for single row....
+
+out side topic...
+iis host name
+
+
+
+s_id , table , name , roll , email , phone , depertment , semester , profilepic
+0		1		2		3		4		5			6	     7			8
+
+
+Cookies["ocsims_std"].Value;
+Session["login"]==userid;
+session["assign_refresh"]="1";
+session["marquee"]=="1";
+
+
+
+
+window.onbeforeunload = function (e) {
+    // Cancel the event
+    e.preventDefault();
+
+    // Chrome requires returnValue to be set
+    e.returnValue = 'Really want to quit the game?';
+};
+
+//Prevent Ctrl+S (and Ctrl+W for old browsers and Edge)
+document.onkeydown = function (e) {
+    e = e || window.event;//Get event
+
+    if (!e.ctrlKey) return;
+
+    var code = e.which || e.keyCode;//Get key code
+
+    switch (code) {
+        case 83://Block Ctrl+S
+        case 87://Block Ctrl+W -- Not work in Chrome and new Firefox
+            e.preventDefault();
+            e.stopPropagation();
+            break;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.addEventListener("contextmenu", function(event){
+event.preventDefault();
+alert('Right Click is Disabled');    
+}, false);
+
+document.onkeydown = function (e) {
+    return false;
+}
+
+</script>
